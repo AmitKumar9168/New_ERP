@@ -1,10 +1,16 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     var semSelectors = document.querySelectorAll('.sem');
+    var submitButtons = document.querySelectorAll('.submit-btn');
+
+    // Initialize submission counters
+    var submissionCounters = [];
 
     semSelectors.forEach(function(semSelector) {
         semSelector.addEventListener('change', function() {
             var semester = this.value;
-            var subSelector = this.closest('tr').querySelector('.sub1');
+            var row = this.closest('tr');
+            var subSelector = row.querySelector('.sub1');
 
             // Clear existing options
             subSelector.innerHTML = '';
@@ -26,6 +32,33 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 subSelector.disabled = true;
                 subSelector.innerHTML = '<option disabled selected>Select Semester First</option>';
+            }
+        });
+    });
+
+    submitButtons.forEach(function(submitButton, index) {
+        // Initialize the submission counter for each row
+        submissionCounters[index] = 0;
+
+        submitButton.addEventListener('click', function() {
+            var row = this.closest('tr');
+            var semForm = row.querySelector('.sem-form');
+            var subForm = row.querySelector('.sub-form');
+
+            // Increase the submission counter
+            submissionCounters[index] += 1;
+
+            // Create form data objects and log them (replace with actual form submission logic)
+            var semFormData = new FormData(semForm);
+            var subFormData = new FormData(subForm);
+            
+            console.log('Submitting forms for row ' + (index + 1));
+            console.log('Semester Form Data:', semFormData.get('sem'));
+            console.log('Subject Form Data:', subFormData.get('sub1'));
+
+            // Disable the button if it has been clicked 5 times
+            if (submissionCounters[index] >= 5) {
+                this.disabled = true;
             }
         });
     });
