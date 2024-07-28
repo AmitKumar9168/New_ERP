@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/style/progress_bar.css">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="./assets/style/style.css">
+	<link rel="stylesheet" href="./assets/style/history.css">
+
+	<link rel="stylesheet" href="./assets/style/students.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<title>TAE</title>
+</head>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<span class="text"><img src="/assets/img/tae-logo.png" height="100px" alt=""></span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="index.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="academics.html">
+					<i class='bx bxs-calendar-star'></i>
+					<span class="text">Academics</span>
+				</a>
+			</li>
+			<li>
+				<a href="notices.html">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Notices</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Time Table</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class='bx bxs-group'></i>
+					<span class="text">Leaves</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<i class='bx bxs-group'></i>
+					<span class="text">Student Info</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class='bx bxs-group'></i>
+					<span class="text">Feedback</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<div class="intro">
+				<h2>Trinity Academy of Engineering</h2>
+			</div>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+
+			<a href="#" class="profile">
+				<p>Prof. Nilufer Zaman</p> <img src="/assets/img/nilufermam.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Students</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Students</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Registration</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="./assets/img/logo.jpg" alt="Student Image" class="student-image">
+				<div class="form-content">
+					<div class="grid-section">
+						<div class="input-group">
+							<label for="prnNo">  <i>PRN No. : </i> </label>
+							<!-- <input type="text" id="prnNo" name="prnNo" required> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="admissionDate">Admission Date</label>
+							<!-- <input type="date" id="admissionDate" name="admissionDate" required> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="admissionType">Admission Type</label>
+							<!-- <select id="admissionType" name="admissionType" required>
+								<option value="regular">Regular</option>
+								<option value="lateral">Lateral</option>
+							</select> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="enrolledCourse">Enrolled Course</label>
+							<!-- <input type="text" id="enrolledCourse" name="enrolledCourse" required> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="abcid">ABCID</label>
+							<!-- <input type="text" id="abcid" name="abcid" required> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="lastQualification">Last Qualification</label>
+							<!-- <select id="lastQualification" name="lastQualification" required>
+								<option value="12th">12th</option>
+								<option value="diploma">Diploma</option>
+							</select> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="scholarship">Scholarship Applicable</label>
+							<!-- <select id="scholarship" name="scholarship" required>
+								<option value="yes">Yes</option>
+								<option value="no">No</option>
+							</select> -->
+							<p></p>
+						</div>
+					</div>
+					<hr class="hr2">
+					  <div class="left-section">
+						<div class="fees-grid">
+						<div class="input-group">
+							<label for="totalFees">Total Fees</label>
+							<!-- <input type="number" id="totalFees" name="totalFees" required> -->
+							<p></p>
+							
+						</div>
+						<div class="input-group">
+							<label for="feesPaid">Fees Paid</label>
+							<!-- <input type="number" id="feesPaid" name="feesPaid" required> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="remainingFees">Remaining Fees</label>
+							<!-- <input type="number" id="remainingFees" name="remainingFees" required> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="hostelFees">Hostel Fees</label>
+							<!-- <input type="number" id="hostelFees" name="hostelFees" required> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="hostelFeesPaid">Hostel Fees Paid</label>
+							<!-- <input type="number" id="hostelFeesPaid" name="hostelFeesPaid" required> -->
+							<p></p>
+						</div>
+						<div class="input-group">
+							<label for="hostelFeesRemaining">Hostel Fees Remaining</label>
+							<!-- <input type="number" id="hostelFeesRemaining" name="hostelFeesRemaining" required> -->
+							<p></p>
+						</div>
+					</div>
+					<hr>
+					<div class="personal-details">
+						<h3>Personal Details</h3>
+						<div class="personal-details-grid">
+							<div class="input-group">
+								<label for="name">Name</label>
+								<!-- <input type="text" id="name" name="name" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="fatherName">Father's Name</label>
+								<!-- <input type="text" id="fatherName" name="fatherName" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="motherName">Mother's Name</label>
+								<!-- <input type="text" id="motherName" name="motherName" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="lastName">Last Name</label>
+								<!-- <input type="text" id="lastName" name="lastName" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="studentContact">Student's Contact Info</label>
+								<!-- <input type="tel" id="studentContact" name="studentContact" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="fatherContact">Father's Contact Number</label>
+								<!-- <input type="tel" id="fatherContact" name="fatherContact" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="motherContact">Mother's Contact Number</label>
+								<!-- <input type="tel" id="motherContact" name="motherContact" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="emergencyContact">Emergency Contact Number</label>
+								<!-- <input type="tel" id="emergencyContact" name="emergencyContact" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="email">Email Address</label>
+								<!-- <input type="email" id="email" name="email" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="aadharNo">Aadhar Card No</label>
+								<!-- <input type="text" id="aadharNo" name="aadharNo" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="category">Category</label>
+								<!-- <select id="category" name="category" required>
+									<option value="open">Open</option>
+									<option value="sc">SC</option>
+									<option value="st">ST</option>
+									<option value="obc">OBC</option>
+								</select> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="bloodGroup">Blood Group</label>
+								<!-- <input type="text" id="bloodGroup" name="bloodGroup" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="department">Department</label>
+								<!-- <input type="text" id="department" name="department" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="temporaryAddress">Temporary Address</label>
+								<!-- <textarea id="temporaryAddress" name="temporaryAddress" rows="3" required></textarea> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="permanentAddress">Permanent Address</label>
+								<!-- <textarea id="permanentAddress" name="permanentAddress" rows="3" required></textarea> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="residentialStatus">Residential Status</label>
+								<!-- <input type="text" id="residentialStatus" name="residentialStatus" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="state">State</label>
+								<!-- <input type="text" id="state" name="state" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="city">City</label>
+								<!-- <input type="text" id="city" name="city" required> -->
+								<p></p>
+							</div>
+							<div class="input-group">
+								<label for="pincode">Pincode</label>
+								<!-- <input type="text" id="pincode" name="pincode" required> -->
+								<p></p>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<style>
+
+				
+
+
+.card {
+    display: flex;
+    width: 89vw;
+    max-height: 100vw;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.student-image {
+    width: 20%;
+    height: 20%;
+    object-fit:fill;
+}
+
+.form-content {
+	width: 80%;
+    box-sizing: border-box;
+    overflow:visible;
+}
+
+
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+	margin-top: 50px;
+	margin-left: 160px;
+}
+
+.left-section {
+	margin-left: -270px;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+    margin-bottom: 15px;
+	padding-left: 70px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #ccc;
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+.hr2{
+	border: 0;
+    border-top: 1px solid #ccc;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 55px;
+}
+
+.personal-details {
+    margin-top: 20px;
+}
+
+
+.personal-details h3 {
+	margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.fees-grid,
+.personal-details-grid {
+    display: grid;
+    gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 2rem;
+}
+				
+
+
+			</style>
+			
+			
+		</main>
+
+	</section>
+
+
+	<script src="./assets/script/script.js"></script>
+	<script src="script.js"></script>
+
+	
+</script>
+</body>
+
+</html>
+  
+ 
+
+
+
+
+				
+
+				
