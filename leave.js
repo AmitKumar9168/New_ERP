@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return diff > 0 ? `${diff.toFixed(2)} hours` : '-';
     }
 
-    // Update leave balance (if applicable)
+    // Update leave balance
     const leaveBalance = {
         sickLeave: { used: 0, total: 9 },
         casualLeave: { used: 0, total: 9.5 },
